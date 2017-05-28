@@ -1,7 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc669ba3-56e5-4ee2-a2ec-4d8569b426aa" name="Default" comment="" />
+    <list default="true" id="fc669ba3-56e5-4ee2-a2ec-4d8569b426aa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/1111.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/2222.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/3333.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/4444.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/5555.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/71ca719122fb3e722dab627cd6cf85e3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/913d8d8cf1b253b8151781d4980aff72.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/99c4e58598a2098fcdc6477f58eafb6f.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/BG.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/BG0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/BG1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/BSYH.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/BSYH2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/JTHY.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/a0bd8087dfb0cca581c008959aa1cce7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/american.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/banner0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/banner1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/banner2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/begin1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/begin2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/begin3.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/beijing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/beijinming.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/bg0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/bg1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/bg_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/bg_dotline_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/brand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/connect.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/content1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/content2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/content3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/design8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/gift.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/good3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/honor1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/honor2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/hsk0.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/ico_diamond.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/invent.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/item2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/item3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/item4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/item5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/item6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/jeans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/jthy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/knkt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/left.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/paper.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/qr_code1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/qr_code2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/right.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/shirt-women.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/tech.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/womens-bag.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/work.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf0.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf3.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf4.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf5.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf6.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf7.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/wyf8.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/下料溜槽耐磨料.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/不发火混凝土.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/不发火砂浆.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/不发火耐磨地坪.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/冲渣沟耐磨料.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/彩色耐磨地坪.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/筒仓壁耐磨料.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/耐油地坪.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/耐油混凝土.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/耐碱混凝土.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/耐磨砂浆.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/耐酸混凝土.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/裂缝修复砂浆.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/金刚砂耐磨地坪1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/铁屑工序.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/images/铁屑砂浆.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/common/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/common/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/about_us.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/owl.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/js/jquery-3.0.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/static/js/owl.carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Home/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_05_28.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/17_05_28.log" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -285,7 +421,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1495952036938</updated>
-      <workItem from="1495952039254" duration="8181000" />
+      <workItem from="1495952039254" duration="8260000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1495953476482</created>
@@ -312,7 +448,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8181000" />
+    <option name="totallyTimeSpent" value="8260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
