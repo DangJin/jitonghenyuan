@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="bdm271467280_db@bdm271467280.my3w.com" uuid="b498e262-fabf-4233-b0fc-c7d46690709b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <introspection-schemas>*:bdm271467280_db</introspection-schemas>
+    </data-source>
+  </component>
+</project>
