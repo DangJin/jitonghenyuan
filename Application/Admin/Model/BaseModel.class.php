@@ -31,6 +31,12 @@ class BaseModel extends Model
 
     public function SelectById($id)
     {
+        try {
+            $this->where(['id' => $id])->delete();
+        } catch (\Exception $e) {
+            $this->getDbError();
+            return false;
+        }
     }
 
     public function UpdateData($id, $params)
