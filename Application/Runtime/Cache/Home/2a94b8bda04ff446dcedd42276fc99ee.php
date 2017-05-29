@@ -14,31 +14,31 @@
 
 
 
-    <link rel="stylesheet" href="Public/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="Public/static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="Public/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/owl.carousel.css">
 
-    <link rel="stylesheet" href="Public/static/css/owl.theme.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/owl.theme.css">
 
-    <link rel="stylesheet" href="Public/static/css/index.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/index.css">
 
-    <link rel="stylesheet" href="Public/static/css/style.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/style.css">
 
-    <link rel="stylesheet" href="Public/static/css/about_us.css">
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/about_us.css">
 
-    <link rel="stylesheet" href="Public/static/css/animate.css">
-
-
+    <link rel="stylesheet" href="/jitonghenyuan/Public/static/css/animate.css">
 
 
 
-    <script type="text/javascript" src="Public/static/js/jquery-3.0.0.min.js"></script>
 
-    <script type="text/javascript" src="Public/static/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="Public/static/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="/jitonghenyuan/Public/static/js/jquery-3.0.0.min.js"></script>
+
+    <script type="text/javascript" src="/jitonghenyuan/Public/static/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/jitonghenyuan/Public/static/js/owl.carousel.js"></script>
 
 
 
@@ -76,7 +76,7 @@
 
             <div class="index_head_logoimg  col-md-10">
 
-                <a href="index.html"><img src="Public/static/images/logo.png" alt="..." class="img-responsive"></a>
+                <a href="index.html"><img src="/jitonghenyuan/Public/static/images/logo.png" alt="..." class="img-responsive"></a>
 
             </div>
 
@@ -238,21 +238,21 @@
 
                 <ul class="nav navbar-nav sidebar-nav">
 
-                    <li class="active"><a href="index.html">网站首页 <span class="sr-only">(current)</span></a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?> ><a href="index.html">网站首页 <span class="sr-only">(current)</span></a></li>
 
-                    <li><a href="product.html">产品中心</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="product.html">产品中心</a></li>
 
-                    <li><a href="example.html">工程案例</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="example.html">工程案例</a></li>
 
-                    <li><a href="net.html">销售网络</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="net.html">销售网络</a></li>
 
 
 
-                    <li><a href="news.html">新闻资讯</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="news.html">新闻资讯</a></li>
 
-                    <li><a href="about_us.html">关于我们</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="aboutUs.html">关于我们</a></li>
 
-                    <li><a href="connect_us.html">联系我们</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="contactUs.html">联系我们</a></li>
 
                 </ul>
 
@@ -309,25 +309,25 @@
 
                 <div class="item active">
 
-                    <img src="Public/static/images/71ca719122fb3e722dab627cd6cf85e3.jpg" alt="..." style="width:100%;">
+                    <img src="/jitonghenyuan/Public/static/images/71ca719122fb3e722dab627cd6cf85e3.jpg" alt="..." style="width:100%;">
 
                 </div>
 
                 <div class="item">
 
-                    <img src="Public/static/images/913d8d8cf1b253b8151781d4980aff72.jpg" alt="..." style="width:100%;">
+                    <img src="/jitonghenyuan/Public/static/images/913d8d8cf1b253b8151781d4980aff72.jpg" alt="..." style="width:100%;">
 
                 </div>
 
                 <div class="item">
 
-                    <img src="Public/static/images/99c4e58598a2098fcdc6477f58eafb6f.jpg" alt="..." style="width:100%;">
+                    <img src="/jitonghenyuan/Public/static/images/99c4e58598a2098fcdc6477f58eafb6f.jpg" alt="..." style="width:100%;">
 
                 </div>
 
                 <div class="item">
 
-                    <img src="Public/static/images/a0bd8087dfb0cca581c008959aa1cce7.jpg" alt="..." style="width:100%;">
+                    <img src="/jitonghenyuan/Public/static/images/a0bd8087dfb0cca581c008959aa1cce7.jpg" alt="..." style="width:100%;">
 
                 </div>
 
@@ -478,7 +478,7 @@
         </nav>
 
 
-        <div class="introduction row" style="background: url(Public/static/images/bg_1.png);">
+        <div class="introduction row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">
 
             <div class="col-md-2"></div>
 
@@ -499,7 +499,7 @@
         </div>
 
 
-        <div class="product_img row" style="background: url(Public/static/images/bg_1.png);">
+        <div class="product_img row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">
 
             <div class="col-md-2"></div>
 
@@ -511,7 +511,7 @@
                         <a href="tiexie.html">
                             <div class="li_img_div">
 
-                                <img src="Public/static/images/铁屑砂浆.jpg">
+                                <img src="/jitonghenyuan/Public/static/images/铁屑砂浆.jpg">
 
                                 <span>铁屑砂浆</span>
 
@@ -524,7 +524,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/彩色耐磨地坪.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/彩色耐磨地坪.jpg">
 
                             <span>彩色耐磨地坪</span>
 
@@ -536,7 +536,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/耐油混凝土.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/耐油混凝土.jpg">
 
                             <span>耐油混凝土</span>
 
@@ -548,7 +548,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/不发火混凝土.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/不发火混凝土.jpg">
 
                             <span>不发火混凝土</span>
 
@@ -561,7 +561,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/裂缝修复砂浆.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/裂缝修复砂浆.jpg">
 
                             <span>裂缝修复砂浆</span>
 
@@ -573,7 +573,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/金刚砂耐磨地坪1.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/金刚砂耐磨地坪1.jpg">
 
                             <span>金刚砂耐磨地坪1</span>
 
@@ -585,7 +585,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/下料溜槽耐磨料.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/下料溜槽耐磨料.jpg">
 
                             <span>下料溜槽耐磨料</span>
 
@@ -597,7 +597,7 @@
 
                         <div class="li_img_div">
 
-                            <img src="Public/static/images/筒仓壁耐磨料.jpg">
+                            <img src="/jitonghenyuan/Public/static/images/筒仓壁耐磨料.jpg">
 
                             <span>筒仓壁耐磨料</span>
 
@@ -646,7 +646,7 @@
 
                     <div class="thumbnail">
 
-                        <img src="Public/static/images/BSYH.jpg" class="img-responsive">
+                        <img src="/jitonghenyuan/Public/static/images/BSYH.jpg" class="img-responsive">
 
                         <div class="caption">
 
@@ -666,7 +666,7 @@
 
                     <div class="thumbnail">
 
-                        <img src="Public/static/images/BSYH2.jpg" class="img-responsive">
+                        <img src="/jitonghenyuan/Public/static/images/BSYH2.jpg" class="img-responsive">
 
                         <div class="caption">
 
@@ -686,7 +686,7 @@
 
                     <div class="thumbnail">
 
-                        <img src="Public/static/images/1.jpg" class="img-responsive">
+                        <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
 
                         <div class="caption">
 
@@ -709,7 +709,7 @@
         </div>
 
 
-        <div class="introduction  row" style="background: url(Public/static/images/bg_1.png);">
+        <div class="introduction  row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">
 
             <div class="col-md-2"></div>
 
@@ -730,7 +730,7 @@
         </div>
 
 
-        <div class="row" style="background: url(Public/static/images/bg_1.png);">
+        <div class="row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">
 
             <div class="col-md-2"></div>
 
@@ -740,7 +740,7 @@
 
                     <div class="col-md-6">
 
-                        <img src="Public/static/images/JTHY.PNG" class="img-responsive">
+                        <img src="/jitonghenyuan/Public/static/images/JTHY.PNG" class="img-responsive">
 
                     </div>
 
@@ -759,7 +759,7 @@
 
                     <div class="col-md-6">
 
-                        <img src="Public/static/images/1.jpg" class="img-responsive">
+                        <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
 
                     </div>
 
@@ -830,7 +830,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 hidden-md hidden-sm hidden-xs">
-                    <img src="Public/static/images/1.jpg" class="img-responsive">
+                    <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
                 </div>
             </div>
             <div class="col-md-2"></div>
@@ -840,7 +840,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8 row">
                 <div class="col-md-6 hidden-md hidden-sm hidden-xs">
-                    <img src="Public/static/images/1.jpg" class="img-responsive">
+                    <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
                 </div>
                 <div class="col-md-6 row">
                     <div class="col-md-12 row advantages3">
@@ -896,14 +896,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 hidden-md hidden-sm hidden-xs">
-                    <img src="Public/static/images/1.jpg" class="img-responsive">
+                    <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
                 </div>
             </div>
             <div class="col-md-2"></div>
 
 
         </div>
-
 
         <div class="introduction  row">
 
@@ -913,9 +912,7 @@
 
                 <div class="page-header animated">
 
-                    <h1>吉通恒远
-                        <small>合作共赢</small>
-                    </h1>
+                    <h1>吉通恒远 <small>合作共赢</small></h1>
 
                 </div>
 
@@ -926,38 +923,42 @@
         </div>
 
 
-        <div class="row" style="margin-bottom:100px ">
 
-            <div class="col-md-2"></div>
+        
+<div class="row" style="margin-bottom:100px ">
 
-            <div id="owl-demo" class="owl-carousel col-md-8">
+    <div class="col-md-2"></div>
 
-                <a class="item"><img src="Public/static/images/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
+    <div id="owl-demo" class="owl-carousel col-md-8">
 
-                <a class="item"><img src="Public/static/images/item2.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item3.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item2.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item4.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item3.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item5.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item4.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item5.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item2.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item3.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item2.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-                <a class="item"><img src="Public/static/images/item4.jpg" alt="" class="img-responsive"><span>图片</span></a>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item3.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-            </div>
+        <a class="item"><img src="/jitonghenyuan/Public/static/images/item4.jpg" alt="" class="img-responsive"><span>图片</span></a>
 
-            <div class="col-md-2"></div>
+    </div>
 
-        </div>
-        <script type="text/javascript">
+    <div class="col-md-2"></div>
+
+</div>
+
+
+<script type="text/javascript">
 
                     $(function(){
 
@@ -978,7 +979,7 @@
 
 
 
-                <div class="row visible-lg-block" style="background: url(Public/static/images/bg_1.png);margin-top: 60px">
+                <div class="row visible-lg-block" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);margin-top: 60px">
 
                     <div class="col-md-12 hidden-xs" style="border-bottom: 2px solid #343399">
 
@@ -988,19 +989,19 @@
 
                             <ul class="nav nav-tabs">
 
-                                <li role="presentation" class="active"><a href="index.html">首页</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?>><a href="index.html">首页</a></li>
 
-                                <li role="presentation"><a href="product.html">产品中心</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="product.html">产品中心</a></li>
 
-                                <li role="presentation"><a href="example.html">工程案例</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="example.html">工程案例</a></li>
 
-                                <li role="presentation"><a href="net.html">销售网络</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="net.html">销售网络</a></li>
 
-                                <li role="presentation"><a href="news.html">新闻资讯</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="news.html">新闻资讯</a></li>
 
-                                <li role="presentation"><a href="about_us.html">关于我们</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="aboutUs.html">关于我们</a></li>
 
-                                <li role="presentation"><a href="connect_us.html">联系我们</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="contactUs.html">联系我们</a></li>
 
                             </ul>
 
@@ -1018,7 +1019,7 @@
                             <table>
                                 <tr class="row">
                                     <td class="col-md-3">
-                                        <img src="Public/static/images/JTHY.PNG" class="img-responsive">
+                                        <img src="/jitonghenyuan/Public/static/images/JTHY.PNG" class="img-responsive">
                                     </td>
                                     <td class="col-md-4">
                                         <ul class="foot_connect_ul1">
@@ -1040,11 +1041,11 @@
                                         <ul class="foot_connect_ul2 row">
                                             <li class="col-md-6">
                                                 <i class="fa fa-weixin" style="color:#743310"></i>  关注微信公众号
-                                                <img src="Public/static/images/qr_code1.png">
+                                                <img src="/jitonghenyuan/Public/static/images/qr_code1.png">
                                             </li>
                                             <li class="col-md-6">
                                                 <i class="fa fa-mobile" style="color:#743310"></i>  使用手机浏览本网站
-                                                <img src="Public/static/images/qr_code1.png">
+                                                <img src="/jitonghenyuan/Public/static/images/qr_code1.png">
                                             </li>
                                         </ul>
                                     </td>

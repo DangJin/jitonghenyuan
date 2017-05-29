@@ -1,3 +1,37 @@
+
+<div class="row" style="margin-bottom:100px ">
+
+    <div class="col-md-2"></div>
+
+    <div id="owl-demo" class="owl-carousel col-md-8">
+
+        <a class="item"><img src="__IMA__/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item2.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item3.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item4.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item5.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item6.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item2.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item3.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+        <a class="item"><img src="__IMA__/item4.jpg" alt="" class="img-responsive"><span>图片</span></a>
+
+    </div>
+
+    <div class="col-md-2"></div>
+
+</div>
+
+
 <script type="text/javascript">
 
                     $(function(){
@@ -29,19 +63,19 @@
 
                             <ul class="nav nav-tabs">
 
-                                <li role="presentation" class="active"><a href="index.html">首页</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?>><a href="index.html">首页</a></li>
 
-                                <li role="presentation"><a href="product.html">产品中心</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="product.html">产品中心</a></li>
 
-                                <li role="presentation"><a href="example.html">工程案例</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="example.html">工程案例</a></li>
 
-                                <li role="presentation"><a href="net.html">销售网络</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="net.html">销售网络</a></li>
 
-                                <li role="presentation"><a href="news.html">新闻资讯</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="news.html">新闻资讯</a></li>
 
-                                <li role="presentation"><a href="about_us.html">关于我们</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="aboutUs.html">关于我们</a></li>
 
-                                <li role="presentation"><a href="connect_us.html">联系我们</a></li>
+                                <li role="presentation" <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="contactUs.html">联系我们</a></li>
 
                             </ul>
 
