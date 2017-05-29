@@ -313,7 +313,7 @@ class Smarty_Security {
         $_template_dir = $this->smarty->getTemplateDir();
         $_config_dir = $this->smarty->getConfigDir();
 
-        // check if Index is outdated
+        // check if index is outdated
         if ((!$this->_template_dir || $this->_template_dir !== $_template_dir)
                 || (!$this->_config_dir || $this->_config_dir !== $_config_dir)
                 || (!empty($this->secure_dir) && (!$this->_secure_dir || $this->_secure_dir !== $this->secure_dir))
@@ -324,7 +324,7 @@ class Smarty_Security {
             $_secure = !empty($this->secure_dir);
         }
 
-        // rebuild template dir Index
+        // rebuild template dir index
         if ($_template) {
             $this->_template_dir = $_template_dir;
             foreach ($_template_dir as $directory) {
@@ -333,7 +333,7 @@ class Smarty_Security {
             }
         }
 
-        // rebuild config dir Index
+        // rebuild config dir index
         if ($_config) {
             $this->_config_dir = $_config_dir;
             foreach ($_config_dir as $directory) {
@@ -342,7 +342,7 @@ class Smarty_Security {
             }
         }
 
-        // rebuild secure dir Index
+        // rebuild secure dir index
         if ($_secure) {
             $this->_secure_dir = $this->secure_dir;
             foreach ((array) $this->secure_dir as $directory) {
@@ -388,7 +388,7 @@ class Smarty_Security {
             throw new SmartyException("directory '{$filepath}' not allowed by security setting (no trusted_dir specified)");
         }
 
-        // check if Index is outdated
+        // check if index is outdated
         if (!$this->_trusted_dir || $this->_trusted_dir !== $this->trusted_dir) {
             $this->_php_resource_dir = array();
 

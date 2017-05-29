@@ -1,0 +1,72 @@
+[ 2017-05-29T08:51:50+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002057s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0079s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'category.id=article.cate_id JOIN category category' at line 1
+ [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article category.id=article.cate_id JOIN category category  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'category.id=article.cate_id JOIN category category' at line 1
+ [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article category.id=article.cate_id JOIN category category  
+
+[ 2017-05-29T08:55:50+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0072s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
+ERR: 1054:Unknown column '__CATEGORY.pid' in 'on clause'
+ [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=__CATEGORY.pid  
+ERR: 1054:Unknown column '__CATEGORY.pid' in 'on clause'
+ [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=__CATEGORY.pid  
+
+[ 2017-05-29T08:56:29+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.pid   [ RunTime:0.0081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002095s ]
+
+[ 2017-05-29T08:57:43+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002452s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0088s ]
+NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
+NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
+NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id   [ RunTime:0.0081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002269s ]
+

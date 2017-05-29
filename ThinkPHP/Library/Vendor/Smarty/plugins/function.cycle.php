@@ -60,7 +60,7 @@ function smarty_function_cycle($params, $template)
     } else {
         if(isset($cycle_vars[$name]['values'])
             && $cycle_vars[$name]['values'] != $params['values'] ) {
-            $cycle_vars[$name]['Index'] = 0;
+            $cycle_vars[$name]['index'] = 0;
         }
         $cycle_vars[$name]['values'] = $params['values'];
     }
@@ -77,26 +77,26 @@ function smarty_function_cycle($params, $template)
         $cycle_array = explode($cycle_vars[$name]['delimiter'],$cycle_vars[$name]['values']);
     }
 
-    if(!isset($cycle_vars[$name]['Index']) || $reset ) {
-        $cycle_vars[$name]['Index'] = 0;
+    if(!isset($cycle_vars[$name]['index']) || $reset ) {
+        $cycle_vars[$name]['index'] = 0;
     }
 
     if (isset($params['assign'])) {
         $print = false;
-        $template->assign($params['assign'], $cycle_array[$cycle_vars[$name]['Index']]);
+        $template->assign($params['assign'], $cycle_array[$cycle_vars[$name]['index']]);
     }
 
     if($print) {
-        $retval = $cycle_array[$cycle_vars[$name]['Index']];
+        $retval = $cycle_array[$cycle_vars[$name]['index']];
     } else {
         $retval = null;
     }
 
     if($advance) {
-        if ( $cycle_vars[$name]['Index'] >= count($cycle_array) -1 ) {
-            $cycle_vars[$name]['Index'] = 0;
+        if ( $cycle_vars[$name]['index'] >= count($cycle_array) -1 ) {
+            $cycle_vars[$name]['index'] = 0;
         } else {
-            $cycle_vars[$name]['Index']++;
+            $cycle_vars[$name]['index']++;
         }
     }
 
