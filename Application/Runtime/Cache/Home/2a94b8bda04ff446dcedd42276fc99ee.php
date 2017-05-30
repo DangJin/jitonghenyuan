@@ -238,21 +238,21 @@
 
                 <ul class="nav navbar-nav sidebar-nav">
 
-                    <li <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?> ><a href="index.html">网站首页 <span class="sr-only">(current)</span></a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?> ><a href="<?php echo U('index/index');?>">网站首页 <span class="sr-only">(current)</span></a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="product.html">产品中心</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="<?php echo U('product/index');?>">产品中心</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="example.html">工程案例</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="<?php echo U('example/index');?>">工程案例</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="net.html">销售网络</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="<?php echo U('net/index');?>">销售网络</a></li>
 
 
 
-                    <li <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="news.html">新闻资讯</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="<?php echo U('news/index');?>">新闻资讯</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="aboutUs.html">关于我们</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="<?php echo U('aboutUs/index');?>">关于我们</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="contactUs.html">联系我们</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="<?php echo U('contactUs/index');?>">联系我们</a></li>
 
                 </ul>
 
@@ -506,104 +506,105 @@
             <div class="product_img_goods col-md-8 row">
 
                 <ul class="col-md-12 row">
+                    <?php if(is_array($product)): $i = 0; $__LIST__ = $product;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="col-md-3">
+                            <a href="<?php echo U('Home/Product/introduce', array('id'=>$vo['id']));?>">
+                                <div class="li_img_div">
 
-                    <li class="col-md-3">
-                        <a href="tiexie.html">
-                            <div class="li_img_div">
+                                    <img src=<?php echo ($vo["image"]); ?>>
 
-                                <img src="/jitonghenyuan/Public/static/images/铁屑砂浆.jpg">
+                                    <span><?php echo ($vo["title"]); ?></span>
 
-                                <span>铁屑砂浆</span>
+                                </div>
+                            </a>
 
-                            </div>
-                        </a>
-
-                    </li>
-
-                    <li class="col-md-3">
-
-                        <div class="li_img_div">
-
-                            <img src="/jitonghenyuan/Public/static/images/彩色耐磨地坪.jpg">
-
-                            <span>彩色耐磨地坪</span>
-
-                        </div>
-
-                    </li>
-
-                    <li class="col-md-3">
-
-                        <div class="li_img_div">
-
-                            <img src="/jitonghenyuan/Public/static/images/耐油混凝土.jpg">
-
-                            <span>耐油混凝土</span>
-
-                        </div>
-
-                    </li>
-
-                    <li class="col-md-3">
-
-                        <div class="li_img_div">
-
-                            <img src="/jitonghenyuan/Public/static/images/不发火混凝土.jpg">
-
-                            <span>不发火混凝土</span>
-
-                        </div>
-
-                    </li>
+                        </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
-                    <li class="col-md-3">
 
-                        <div class="li_img_div">
+                    <!--<li class="col-md-3">-->
 
-                            <img src="/jitonghenyuan/Public/static/images/裂缝修复砂浆.jpg">
+                        <!--<div class="li_img_div">-->
 
-                            <span>裂缝修复砂浆</span>
+                            <!--<img src="/jitonghenyuan/Public/static/images/彩色耐磨地坪.jpg">-->
 
-                        </div>
+                            <!--<span>彩色耐磨地坪</span>-->
 
-                    </li>
+                        <!--</div>-->
 
-                    <li class="col-md-3">
+                    <!--</li>-->
 
-                        <div class="li_img_div">
+                    <!--<li class="col-md-3">-->
 
-                            <img src="/jitonghenyuan/Public/static/images/金刚砂耐磨地坪1.jpg">
+                        <!--<div class="li_img_div">-->
 
-                            <span>金刚砂耐磨地坪1</span>
+                            <!--<img src="/jitonghenyuan/Public/static/images/耐油混凝土.jpg">-->
 
-                        </div>
+                            <!--<span>耐油混凝土</span>-->
 
-                    </li>
+                        <!--</div>-->
 
-                    <li class="col-md-3">
+                    <!--</li>-->
 
-                        <div class="li_img_div">
+                    <!--<li class="col-md-3">-->
 
-                            <img src="/jitonghenyuan/Public/static/images/下料溜槽耐磨料.jpg">
+                        <!--<div class="li_img_div">-->
 
-                            <span>下料溜槽耐磨料</span>
+                            <!--<img src="/jitonghenyuan/Public/static/images/不发火混凝土.jpg">-->
 
-                        </div>
+                            <!--<span>不发火混凝土</span>-->
 
-                    </li>
+                        <!--</div>-->
 
-                    <li class="col-md-3">
+                    <!--</li>-->
 
-                        <div class="li_img_div">
 
-                            <img src="/jitonghenyuan/Public/static/images/筒仓壁耐磨料.jpg">
+                    <!--<li class="col-md-3">-->
 
-                            <span>筒仓壁耐磨料</span>
+                        <!--<div class="li_img_div">-->
 
-                        </div>
+                            <!--<img src="/jitonghenyuan/Public/static/images/裂缝修复砂浆.jpg">-->
 
-                    </li>
+                            <!--<span>裂缝修复砂浆</span>-->
+
+                        <!--</div>-->
+
+                    <!--</li>-->
+
+                    <!--<li class="col-md-3">-->
+
+                        <!--<div class="li_img_div">-->
+
+                            <!--<img src="/jitonghenyuan/Public/static/images/金刚砂耐磨地坪1.jpg">-->
+
+                            <!--<span>金刚砂耐磨地坪1</span>-->
+
+                        <!--</div>-->
+
+                    <!--</li>-->
+
+                    <!--<li class="col-md-3">-->
+
+                        <!--<div class="li_img_div">-->
+
+                            <!--<img src="/jitonghenyuan/Public/static/images/下料溜槽耐磨料.jpg">-->
+
+                            <!--<span>下料溜槽耐磨料</span>-->
+
+                        <!--</div>-->
+
+                    <!--</li>-->
+
+                    <!--<li class="col-md-3">-->
+
+                        <!--<div class="li_img_div">-->
+
+                            <!--<img src="/jitonghenyuan/Public/static/images/筒仓壁耐磨料.jpg">-->
+
+                            <!--<span>筒仓壁耐磨料</span>-->
+
+                        <!--</div>-->
+
+                    <!--</li>-->
 
 
                 </ul>
@@ -641,68 +642,67 @@
             <div class="col-md-2"></div>
 
             <div class="col-md-8">
+                <?php if(is_array($example)): $i = 0; $__LIST__ = $example;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="col-md-4">
 
-                <div class="col-md-4">
+                        <div class="thumbnail">
 
-                    <div class="thumbnail">
+                            <img src=<?php echo ($vo["image"]); ?> class="img-responsive">
 
-                        <img src="/jitonghenyuan/Public/static/images/BSYH.jpg" class="img-responsive">
+                            <div class="caption">
 
-                        <div class="caption">
+                                <h3><?php echo ($vo["title"]); ?></h3>
 
-                            <h3>北京京芯产业园</h3>
+                                <?php echo ($vo["describe"]); ?>
 
-                            <p>该项目总占地面积为77,650平方米， 总建筑面积为231,591平方米， 主要建设包括新建4幢15层高的办公楼。</p>
-
-                            <p><a href="beijing.html" class="btn btn-default" role="button">查看详情</a></p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4">
-
-                    <div class="thumbnail">
-
-                        <img src="/jitonghenyuan/Public/static/images/BSYH2.jpg" class="img-responsive">
-
-                        <div class="caption">
-
-                            <h3>包商银行商务大厦</h3>
-
-                            <p>该项目计划总投资27亿元，占地面积49.77亩，总建筑面积26万平方米，主要建设总部办公大楼、五星级酒店、金融大楼及裙楼。</p>
-
-                            <p><a href="#" class="btn btn-default" role="button">查看详情</a></p>
+                                <p><a href="<?php echo U('Home/example/introduce', array('id'=>$vo['id']));?>" class="btn btn-default" role="button">查看详情</a></p>
+                            </div>
 
                         </div>
 
-                    </div>
+                    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
+
+                <!--<div class="col-md-4">-->
+
+                    <!--<div class="thumbnail">-->
+
+                        <!--<img src="/jitonghenyuan/Public/static/images/BSYH2.jpg" class="img-responsive">-->
+
+                        <!--<div class="caption">-->
+
+                            <!--<h3>包商银行商务大厦</h3>-->
+
+                            <!--<p>该项目计划总投资27亿元，占地面积49.77亩，总建筑面积26万平方米，主要建设总部办公大楼、五星级酒店、金融大楼及裙楼。</p>-->
+
+                            <!--<p><a href="#" class="btn btn-default" role="button">查看详情</a></p>-->
+
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+                <!--</div>-->
+
+                <!--<div class="col-md-4">-->
+
+                    <!--<div class="thumbnail">-->
+
+                        <!--<img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">-->
+
+                        <!--<div class="caption">-->
+
+                            <!--<h3>包商银行商务大厦</h3>-->
+
+                            <!--<p>该项目计划总投资27亿元，占地面积49.77亩，总建筑面积26万平方米，主要建设总部办公大楼、五星级酒店、金融大楼及裙楼。</p>-->
+
+                            <!--<p><a href="#" class="btn btn-default" role="button">查看详情</a></p>-->
+
+                        <!--</div>-->
+
+                    <!--</div>-->
 
                 </div>
 
-                <div class="col-md-4">
-
-                    <div class="thumbnail">
-
-                        <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
-
-                        <div class="caption">
-
-                            <h3>包商银行商务大厦</h3>
-
-                            <p>该项目计划总投资27亿元，占地面积49.77亩，总建筑面积26万平方米，主要建设总部办公大楼、五星级酒店、金融大楼及裙楼。</p>
-
-                            <p><a href="#" class="btn btn-default" role="button">查看详情</a></p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
 
             <div class="col-md-2"></div>
 
@@ -736,39 +736,36 @@
 
             <div class="col-md-8">
 
-                <div class="index_about_us col-md-6">
+                <div class="index_about_us col-md-3">
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
 
                         <img src="/jitonghenyuan/Public/static/images/JTHY.PNG" class="img-responsive">
 
                     </div>
 
-                    <div class="col-md-6">
+                    <!--<div class="col-md-6">-->
 
-                        北京吉通恒远科技有限公司成立于2012年，是一家集研发、生产、销售和技术咨询服务为一体的综合性公司。
-                        公司专注于耐磨料及特种砂浆的生产和销售，主要产品包括：金刚砂耐磨地坪材料、高强耐磨料、不发火砂浆、防辐射砂浆、金刚砂原材料等。
-                        公司在提供高性价比的产品的之外，同时还为不同客户提供实用、经济、创新的施工方案，从而满足客户全方位的需求。
+                        <!--北京吉通恒远科技有限公司成立于2012年，是一家集研发、生产、销售和技术咨询服务为一体的综合性公司。-->
+                        <!--公司专注于耐磨料及特种砂浆的生产和销售，主要产品包括：金刚砂耐磨地坪材料、高强耐磨料、不发火砂浆、防辐射砂浆、金刚砂原材料等。-->
+                        <!--公司在提供高性价比的产品的之外，同时还为不同客户提供实用、经济、创新的施工方案，从而满足客户全方位的需求。-->
 
-                    </div>
+                    <!--</div>-->
 
                 </div>
 
 
-                <div class="index_about_us col-md-6" style="margin-bottom: 30px">
+                <div class="index_about_us col-md-9" style="margin-bottom: 30px">
 
-                    <div class="col-md-6">
+                    <!--<div class="col-md-6">-->
 
-                        <img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">
+                        <!--<img src="/jitonghenyuan/Public/static/images/1.jpg" class="img-responsive">-->
 
-                    </div>
+                    <!--</div>-->
 
-                    <div class="col-md-6">
+                    <div class="col-md-12">
 
-                        公司坚持以创新带动发展，以真诚服务客户的理念，聚集了一批资深的建筑材料专家以及年轻而充满激情的研发创新团队，
-                        并与多所高校开展技术研发合作，是行业内领先前沿的现代化企业。
-                        北京吉通恒远科技有限公司自成立以来，经过5年的稳步发展，形成了具有自身特色的企业文化和服务理念。
-                        祟尚：“创新发展，专业服务、与客户、员工、股东共同发展，共创辉煌”。
+                        <?php echo ($aboutUs["describe"]); ?>
 
 
                     </div>

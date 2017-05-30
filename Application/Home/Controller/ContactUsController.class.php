@@ -17,4 +17,22 @@ class ContactUsController extends Controller
     {
         $this->display('contactUs');
     }
+
+
+    public function message()
+    {
+        $this->display();
+    }
+
+    public function board()
+    {
+        $board = M('Mboard');
+        $board->create();
+        $result = $board->add();
+        if ($result) {
+            $this->success('发送成功');
+        } else {
+            $this->error('发送失败');
+        }
+    }
 }

@@ -1,0 +1,442 @@
+<include file="Public/common/header.html"/>
+
+
+<!-- Page Content -->
+
+<div id="page-content-wrapper">
+
+    <div class="navbar-top">
+
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+
+            <span class="hamb-top"></span>
+
+            <span class="hamb-middle"></span>
+
+            <span class="hamb-bottom"></span>
+
+        </button>
+
+    </div>
+
+
+    <div>
+
+        <img src="__IMA__/paper.jpg" class="img-responsive">
+
+
+        <nav class="navbar navbar-inverse row visible-xs-sm-md-block hidden-lg" id="mobile_product">
+
+            <div class="col-md-2"></div>
+
+            <div class="container-fluid col-md-8">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <span class="navbar-brand" href="#">产品中心</span>
+
+                </div>
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+                    <ul class="nav navbar-nav">
+                        <volist name="list" id="vo">
+                            <li class="dropdown">
+
+                                <a href="{:U('Home/product/index')}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+
+                                   aria-expanded="false">{$vo.name}<span class="caret"></span>
+
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <volist name="vo['child']" id="ao">
+                                        <li><a href="{:U('Home/product/index', array('id'=>$ao['id']))}">{$ao.name}</a></li>
+                                    </volist>
+
+                                    <!--<li><a href="#">下料溜槽耐磨料</a></li>-->
+
+                                    <!--<li><a href="#">冲渣沟耐磨料</a></li>-->
+
+                                </ul>
+
+                            </li>
+                        </volist>
+
+                        <!--<li class="dropdown">-->
+
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                               <!--aria-haspopup="true"-->
+
+                               <!--aria-expanded="false">工业耐磨系列 <span class="caret"></span>-->
+
+                            <!--</a>-->
+
+                            <!--<ul class="dropdown-menu">-->
+
+                                <!--<li><a href="product.html">筒仓壁内衬耐磨料</a></li>-->
+
+                                <!--<li><a href="#">下料溜槽耐磨料</a></li>-->
+
+                                <!--<li><a href="#">冲渣沟耐磨料</a></li>-->
+
+                            <!--</ul>-->
+
+                        <!--</li>-->
+
+                        <!--<li class="dropdown">-->
+
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                               <!--aria-haspopup="true" aria-expanded="false">耐磨地坪系列 <span class="caret"></span></a>-->
+
+                            <!--<ul class="dropdown-menu">-->
+
+                                <!--<li><a href="#">金刚砂耐磨地坪</a></li>-->
+
+                                <!--<li><a href="#">不发火耐磨地坪</a></li>-->
+
+                                <!--<li><a href="#">高强耐磨料</a></li>-->
+
+                                <!--<li><a href="#">彩色耐磨地坪</a></li>-->
+
+                                <!--<li><a href="#">耐油地坪</a></li>-->
+
+                            <!--</ul>-->
+
+                        <!--</li>-->
+
+                        <!--<li class="dropdown">-->
+
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                               <!--aria-haspopup="true" aria-expanded="false">特种砂浆系列 <span class="caret"></span></a>-->
+
+                            <!--<ul class="dropdown-menu">-->
+
+                                <!--<li><a href="#">铁屑砂浆</a></li>-->
+
+                                <!--<li><a href="#">耐磨砂浆</a></li>-->
+
+                                <!--<li><a href="#">不发火砂浆</a></li>-->
+
+                                <!--<li><a href="#">耐油砂浆</a></li>-->
+
+                            <!--</ul>-->
+
+                        <!--</li>-->
+
+                        <!--<li class="dropdown">-->
+
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                               <!--aria-haspopup="true" aria-expanded="false">特种混泥土系列 <span class="caret"></span></a>-->
+
+                            <!--<ul class="dropdown-menu">-->
+
+                                <!--<li><a href="#">不发火混泥土</a></li>-->
+
+                                <!--<li><a href="#">耐热混泥土</a></li>-->
+
+                            <!--</ul>-->
+
+                        <!--</li>-->
+
+
+                    </ul>
+
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+            <div class="col-md-2"></div>
+
+        </nav>
+
+
+        <div class="index_product_title row hidden-xs  hidden-sm hidden-md">
+
+            <div class="title col-md-12 hidden-xs  hidden-sm hidden-md" align="center">
+
+                <strong>吉通恒远产品中心 | Product Center</strong>
+
+            </div>
+
+            <div class="index_product col-md-12 row">
+
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 row">
+
+                    <div class="img_title col-md-12 hidden-xs  hidden-sm hidden-md">
+
+                        <ul>
+                            <volist name="list" id="vo">
+                                <li class="dropdown">
+
+                                    <a href="{:U('Home/product/index')}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+
+                                       aria-expanded="false">{$vo.name}<span class="caret"></span>
+
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <volist name="vo['child']" id="ao">
+                                            <li><a href="{:U('Home/product/index', array('id'=>$ao['id']))}">{$ao.name}</a></li>
+                                        </volist>
+
+                                        <!--<li><a href="#">下料溜槽耐磨料</a></li>-->
+
+                                        <!--<li><a href="#">冲渣沟耐磨料</a></li>-->
+
+                                    </ul>
+
+                                </li>
+                            </volist>
+                            <!--<li class="dropdown active">-->
+
+                                <!--<a href="product.html" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                                   <!--aria-haspopup="true" aria-expanded="false">工业耐磨系列 <span class="caret"></span></a>-->
+
+                                <!--<ul class="dropdown-menu">-->
+
+                                    <!--<li><a href="product.html">筒仓壁内衬耐磨料</a></li>-->
+
+                                    <!--<li><a href="#">下料溜槽耐磨料</a></li>-->
+
+                                    <!--<li><a href="#">冲渣沟耐磨料</a></li>-->
+
+                                <!--</ul>-->
+
+                            <!--</li>-->
+
+                            <!--<li class="dropdown active">-->
+
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                                   <!--aria-haspopup="true" aria-expanded="false">耐磨地坪系列 <span class="caret"></span></a>-->
+
+                                <!--<ul class="dropdown-menu">-->
+
+                                    <!--<li><a href="#">金刚砂耐磨地坪</a></li>-->
+
+                                    <!--<li><a href="#">不发火耐磨地坪</a></li>-->
+
+                                    <!--<li><a href="#">高强耐磨料</a></li>-->
+
+                                    <!--<li><a href="#">彩色耐磨地坪</a></li>-->
+
+                                    <!--<li><a href="#">耐油地坪</a></li>-->
+
+                                    <!--<li><a href="#">防腐地坪</a></li>-->
+
+                                <!--</ul>-->
+
+                            <!--</li>-->
+
+                            <!--<li class="dropdown active">-->
+
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                                   <!--aria-haspopup="true" aria-expanded="false">特种砂浆系列 <span class="caret"></span></a>-->
+
+                                <!--<ul class="dropdown-menu">-->
+
+                                    <!--<li><a href="#">铁屑砂浆</a></li>-->
+
+                                    <!--<li><a href="#">耐磨砂浆</a></li>-->
+
+                                    <!--<li><a href="#">不发火砂浆</a></li>-->
+
+                                    <!--<li><a href="#">耐油砂浆</a></li>-->
+
+                                    <!--<li><a href="#">裂缝修复材料</a></li>-->
+
+                                    <!--<li><a href="#">耐热砂浆</a></li>-->
+
+                                <!--</ul>-->
+
+                            <!--</li>-->
+
+                            <!--<li class="dropdown active">-->
+
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                                   <!--aria-haspopup="true" aria-expanded="false">特种混泥土系列 <span class="caret"></span></a>-->
+
+                                <!--<ul class="dropdown-menu">-->
+
+                                    <!--<li><a href="#">不发火混泥土</a></li>-->
+
+                                    <!--<li><a href="#">耐热混泥土</a></li>-->
+
+                                    <!--<li><a href="#">耐油混泥土</a></li>-->
+
+                                <!--</ul>-->
+
+                            <!--</li>-->
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-12 hidden-xs  hidden-sm hidden-md"
+             style="height: 50px;background: url(__IMA__/bg_1.png);"></div>
+        <div class="product_img row" style="background: url(__IMA__/bg_1.png);">
+
+            <div class="col-md-2"></div>
+
+            <div class="product_img_goods col-md-8 row">
+
+                <ol class="nav nav-pills nav-stacked col-md-2  hidden-xs  hidden-sm hidden-md">
+                    <volist name="list" id="vo">
+                        <if condition="$pid eq $vo['id']">
+                            <li class="active"><a href="{:U('Home/product/index', array('id'=>$vo['child'][0]['id']))}"><strong>{$vo.name}   <i class="fa fa-angle-down"></i></strong></a></li>
+                            <volist name="vo['child']" id="ao">
+                                <li <if condition="$id eq $ao['id']">class="active"</if> ><a href="{:U('Home/product/index', array('id'=>$ao['id']))}">{$ao.name}</a></li>
+                            </volist>
+                        </if>
+                    </volist>
+
+                    <!--<li class="active"><a><strong>特种砂浆系列 <i class="fa fa-angle-down"></i></strong></a></li>-->
+
+                    <!--<li class="active"><a href="tiexie.html">铁屑砂浆</a></li>-->
+
+                    <!--<li><a href="#">耐磨砂浆</a></li>-->
+
+                    <!--<li><a href="#">不发火砂浆</a></li>-->
+
+                    <!--<li><a href="#">耐油砂浆</a></li>-->
+
+                    <!--<li><a href="#">裂缝修复材料</a></li>-->
+
+                    <!--<li><a href="#">耐热砂浆</a></li>-->
+
+                </ol>
+
+                <ul class="col-md-10 row" style="background: #fafafa">
+
+
+                    <li class="col-md-12 row">
+                        <div class="col-md-12 information_title hidden-md hidden-sm hidden-xs">
+                            产品中心
+                        </div>
+                        <div class="col-md-6">
+                            <img src={$product.image} class="img-responsive">
+                        </div>
+                        <ul class="product_information col-md-6">
+                            <li><strong>产品名称</strong>：{$product.title}</li>
+                            <li><strong>产品简介</strong>：{$product.describe}
+                            </li>
+                            <li>
+                                <strong>适用项目</strong>：{$product.apply}
+                            </li>
+                            <li>
+                                <strong>用量</strong>：{$product.consumption}
+                            </li>
+                            <li>
+                                <strong>技术标准</strong>：{$product.technical}
+                            </li>
+                            <li>
+                                <strong>包装贮存</strong>：{$product.keep}
+
+                            </li>
+                        </ul>
+                    </li>
+                    {$product.content}
+
+                    <!--<li class="col-md-12 row" style="margin-top: 50px">-->
+                        <!--<div class="col-md-2"></div>-->
+                        <!--<div class="col-md-8">-->
+                            <!--<strong>技术指标</strong>-->
+                            <!--<table class="product_table">-->
+                                <!--<tr>-->
+                                    <!--<td rowspan="2">项目</td>-->
+                                    <!--<td>技术指标</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>Ⅱ型</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>外观</td>-->
+                                    <!--<td>均匀无结块</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>骨料含量偏差</td>-->
+                                    <!--<td>控制指标的±5﹪</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>抗折强度，28d，MPa，≥</td>-->
+                                    <!--<td>13.5</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>抗压强度，28d，MPa，≥</td>-->
+                                    <!--<td>90.0</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>耐磨度比，﹪，≥</td>-->
+                                    <!--<td>350</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>强度（压痕直径），mm≤</td>-->
+                                    <!--<td>3.10</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td>颜色（与标准样比）</td>-->
+                                    <!--<td>近似-微</td>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<td colspan="2">“近似”表示用肉眼基本看不出色差，“微”表示用肉眼看似乎有点色差。</td>-->
+                                <!--</tr>-->
+                            <!--</table>-->
+                        <!--</div>-->
+                        <div class="col-md-2"></div>
+                    </li>
+
+                    <!--<li class="col-md-12 row tiexiegongxu" style="margin-top: 50px;">-->
+                        <!--<div class="col-md-2"></div>-->
+                        <!--<div class="col-md-8">-->
+                            <!--<strong>施工工序</strong>-->
+                            <!--<img src={$product.image} class="img-responsive">-->
+                        <!--</div>-->
+                        <!--<div class="col-md-2"></div>-->
+                    <!--</li>-->
+
+                </ul>
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
+        <div class="index_work_title row">
+            <div class="title col-md-12" align="center">
+                <strong>吉通恒远厂房实拍 | Product Center</strong>
+            </div>
+        </div>
+
+
+            <include file="Public/common/footer"/>

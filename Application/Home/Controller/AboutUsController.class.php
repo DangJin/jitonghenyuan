@@ -13,13 +13,11 @@ use Think\Controller;
 
 class AboutUsController extends Controller
 {
+
     public function index()
     {
+        $result = D('Article')->getOneByCid(37);
+        $this->assign('result', $result);
         $this->display('aboutUs');
-    }
-
-    public function aa()
-    {
-
     }
 }
