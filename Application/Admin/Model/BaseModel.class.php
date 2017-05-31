@@ -11,16 +11,22 @@ namespace Admin\Model;
 
 use const false;
 use mysqli_sql_exception;
+use Think\Exception;
 use Think\Model;
 use const true;
 
 class BaseModel extends Model
 {
+    /**
+     * @param $params
+     *
+     * @return bool
+     */
     public function InsertData($params)
     {
         try {
-            $this->data($params)->save();
-            return true;
+            $data=$this->data($params)->add();
+            return $data;
         } catch (\Exception $e) {
             $this->getDbError();
             return false;
@@ -29,6 +35,11 @@ class BaseModel extends Model
 
     }
 
+    /**
+     * @param $id
+     *
+     * @return bool
+     */
     public function SelectById($id)
     {
         try {
@@ -39,12 +50,36 @@ class BaseModel extends Model
         }
     }
 
+    /**
+     * @param $id
+     * @param $params
+     *
+     * @return bool
+     */
     public function UpdateData($id, $params)
     {
+        try {
+            $this->where(['id' => $id])->data($params)->save();
+        } catch (\Exception $e) {
+            $this->getDbError();
+            return false;
+        }
     }
 
+    /**
+     * @param $id
+     *
+     * @return bool
+     */
     public function DelDataById($id)
     {
+        try {
+            $this->where(['id' => $id])->delete();
+            return true;
+        } catch (\Exception $e) {
+            $this->getDbError();
+            return false;
+        }
     }
 
 

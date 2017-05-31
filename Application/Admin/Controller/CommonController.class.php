@@ -13,5 +13,11 @@ use Think\Controller;
 
 class CommonController extends Controller
 {
-
+    public function __construct()
+    {
+        parent::__construct();
+        header('Access-Control-Allow-Origin:*');
+        header('Access-Control-Allow-Credentials', 'true');
+        header('Access-Control-Allow-Methods:*');
+    }
 }

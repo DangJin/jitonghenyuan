@@ -9,10 +9,12 @@
 namespace Admin\Model;
 
 
+use const false;
+use Think\Exception;
 use Think\Model;
 use function var_dump;
 
-class ArticleModel extends Model
+class ArticleModel extends BaseModel
 {
 
     protected $tableName = 'Article';
@@ -35,8 +37,20 @@ class ArticleModel extends Model
         }
 
         $list = $list->field('article.*,category.pid,category.name')->select();
-        $data = $list;
+        $data['data'] = $list;
+        $data['count']=$this->count();
         return $data;
+    }
+
+    public function GetArticleListByCat($cate_id, $page, $limit)
+    {
+        try {
+            $data = $this->where(['cate_id' => $cate_id])->page($page, $limit)->select();
+            return $data;
+        } catch (\Exception $e) {
+            $this->getDbError();
+            return false;
+        }
     }
 
 }

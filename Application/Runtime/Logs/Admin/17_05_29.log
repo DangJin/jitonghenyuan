@@ -1,72 +1,932 @@
-[ 2017-05-29T08:51:50+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+[ 2017-05-29T23:15:04+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0076s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.1198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0069s ]
+
+[ 2017-05-29T23:16:22+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0073s ]
+SQL: UPDATE `article` SET `id`='24',`title`='ggg',`content`='<h3><s><u>ssssdd</u></s></h3><p>ddddddddd</p>',`status`='0' WHERE `id` = 24 [ RunTime:0.0081s ]
+
+[ 2017-05-29T23:16:57+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0082s ]
+SQL: UPDATE `article` SET `id`='24',`title`='ggg',`content`='<ol><li><s class=\"ql-font-serif\"><u>ssssdd</u></s></li><li><span class=\"ql-font-serif\">ddddddddd</span></li><li><span class=\"ql-font-serif\">5555555</span></li><li><span class=\"ql-font-serif\">555555</span></li></ol>',`status`='0' WHERE `id` = 24 [ RunTime:0.0076s ]
+
+[ 2017-05-29T23:17:01+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0075s ]
+SQL: UPDATE `article` SET `id`='24',`title`='ggg',`content`='<ol><li><s class=\"ql-font-serif\"><u>ssssdd</u></s></li><li><span class=\"ql-font-serif\">ddddddddd</span></li><li><span class=\"ql-font-serif\">5555555</span></li><li><span class=\"ql-font-serif\">555555</span></li></ol>',`status`='0' WHERE `id` = 24 [ RunTime:0.0096s ]
+
+[ 2017-05-29T23:17:03+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0066s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0065s ]
+
+[ 2017-05-29T23:17:09+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001987s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002057s ]
-SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0079s ]
-NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
-NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'category.id=article.cate_id JOIN category category' at line 1
- [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article category.id=article.cate_id JOIN category category  
-ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'category.id=article.cate_id JOIN category category' at line 1
- [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article category.id=article.cate_id JOIN category category  
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002449s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0073s ]
+SQL: UPDATE `article` SET `id`='24',`title`='ggg',`content`='<ol><li><s class=\"ql-font-serif\"><u>ssssdd</u></s></li><li><span class=\"ql-font-serif\">ddddddddd</span></li><li><span class=\"ql-font-serif\">5555555</span></li><li><span class=\"ql-font-serif\">555555</span></li></ol>',`status`='0' WHERE `id` = 24 [ RunTime:0.0067s ]
 
-[ 2017-05-29T08:55:50+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+[ 2017-05-29T23:17:17+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0078s ]
+SQL: UPDATE `article` SET `id`='24',`title`='ggg',`content`='<ol><li><s class=\"ql-font-serif\"><u>ssssdd</u></s></li><li><span class=\"ql-font-serif\">ddddddddd</span></li><li><span class=\"ql-font-serif\">5555555</span></li><li><span class=\"ql-font-serif\">555555</span></li></ol>',`status`='0' WHERE `id` = 24 [ RunTime:0.0074s ]
+
+[ 2017-05-29T23:19:34+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0076s ]
+SQL: UPDATE `article` SET `id`='25',`title`='ttt',`content`='<p>123131321321231dafadfadfaf</p>',`status`='1' WHERE `id` = 25 [ RunTime:0.0070s ]
+
+[ 2017-05-29T23:19:37+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001911s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001979s ]
-SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0072s ]
-NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
-NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
-ERR: 1054:Unknown column '__CATEGORY.pid' in 'on clause'
- [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=__CATEGORY.pid  
-ERR: 1054:Unknown column '__CATEGORY.pid' in 'on clause'
- [ SQL语句 ] : SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=__CATEGORY.pid  
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0087s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0082s ]
 
-[ 2017-05-29T08:56:29+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+[ 2017-05-29T23:19:46+08:00 ] 127.0.0.1 /index.php/admin/Article/UpdateArticle
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
-SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
-NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
-NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
-SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.pid   [ RunTime:0.0081s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002032s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002095s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0071s ]
+SQL: UPDATE `article` SET `id`='24',`title`='ggg',`content`='<p>1111111111111111111111</p>',`status`='0' WHERE `id` = 24 [ RunTime:0.0073s ]
 
-[ 2017-05-29T08:57:43+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+[ 2017-05-29T23:19:48+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002371s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002452s ]
-SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0088s ]
-NOTIC: [2] Missing argument 1 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 2 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [2] Missing argument 3 for Admin\Model\ArticleModel::ArticleList(), called in E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\ArticleController.class.php on line 20 and defined E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 20 行.
-NOTIC: [8] Undefined variable: keywords E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 23 行.
-NOTIC: [8] Undefined variable: page E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\ArticleModel.class.php 第 33 行.
-SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id   [ RunTime:0.0081s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0077s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0179s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0074s ]
+
+[ 2017-05-29T23:20:36+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0100s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0070s ]
+
+[ 2017-05-29T23:20:38+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=3&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002433s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0075s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 6,3   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0065s ]
+
+[ 2017-05-29T23:22:16+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002447s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0081s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0071s ]
+
+[ 2017-05-29T23:22:17+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0077s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0072s ]
+
+[ 2017-05-29T23:22:18+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=3&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003768s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0071s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 6,3   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0070s ]
+
+[ 2017-05-29T23:22:19+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=1&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003693s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0078s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0073s ]
+
+[ 2017-05-29T23:23:16+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,5   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0064s ]
+
+[ 2017-05-29T23:23:29+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001830s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0068s ]
+
+[ 2017-05-29T23:28:50+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0074s ]
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+
+[ 2017-05-29T23:29:03+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001960s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0075s ]
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+
+[ 2017-05-29T23:29:11+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001984s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0064s ]
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002269s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002103s ]
+
+[ 2017-05-29T23:30:17+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0079s ]
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001986s ]
+
+[ 2017-05-29T23:30:19+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0077s ]
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 26 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001991s ]
+
+[ 2017-05-29T23:30:37+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002494s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0078s ]
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+NOTIC: [8] Undefined index: parent_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 27 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001989s ]
+
+[ 2017-05-29T23:30:53+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0073s ]
+NOTIC: [8] Undefined index: cat_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: cat_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+NOTIC: [8] Undefined index: cat_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001997s ]
+
+[ 2017-05-29T23:31:05+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001833s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0079s ]
+NOTIC: [8] Undefined index: cat_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2017-05-29T23:31:07+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0077s ]
+NOTIC: [8] Undefined index: cat_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2017-05-29T23:31:27+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: cate_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002250s ]
+
+[ 2017-05-29T23:31:29+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0073s ]
+NOTIC: [8] Undefined index: cate_id E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Model\CategoryModel.class.php 第 31 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+
+[ 2017-05-29T23:31:42+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002182s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002297s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+
+[ 2017-05-29T23:33:00+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002413s ]
+
+[ 2017-05-29T23:34:20+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0076s ]
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+NOTIC: [8] Array to string conversion E:\CodeProject\PhpStormProject\jitonghenyuan\Application\Admin\Controller\CategoryController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002597s ]
+
+[ 2017-05-29T23:34:34+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001967s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002018s ]
+
+[ 2017-05-29T23:35:15+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001966s ]
+
+[ 2017-05-29T23:35:24+08:00 ] 127.0.0.1 /index.php/admin/category/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002120s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2017-05-29T23:37:39+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002079s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0068s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0064s ]
+
+[ 2017-05-29T23:37:42+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002943s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0071s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0072s ]
+
+[ 2017-05-29T23:37:45+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0074s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0064s ]
+
+[ 2017-05-29T23:37:45+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=3&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0069s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 6,3   [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0071s ]
+
+[ 2017-05-29T23:37:46+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=1&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001932s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0085s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2017-05-29T23:39:11+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001855s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0075s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0074s ]
+
+[ 2017-05-29T23:39:27+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002411s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0066s ]
+
+[ 2017-05-29T23:39:28+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=3&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0077s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 6,3   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2017-05-29T23:39:30+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=1&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0075s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0064s ]
+
+[ 2017-05-29T23:39:32+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001785s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0068s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0062s ]
+
+[ 2017-05-29T23:39:33+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=1&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0083s ]
+
+[ 2017-05-29T23:39:37+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001870s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0077s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2017-05-29T23:39:39+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=3&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001925s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0072s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 6,3   [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0071s ]
+
+[ 2017-05-29T23:39:40+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0075s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0070s ]
+
+[ 2017-05-29T23:39:41+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=1&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0073s ]
+
+[ 2017-05-29T23:43:01+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002178s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0074s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0070s ]
+
+[ 2017-05-29T23:43:02+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=2&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0087s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 3,3   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0070s ]
+
+[ 2017-05-29T23:43:03+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=3&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001904s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0082s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 6,3   [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0073s ]
+
+[ 2017-05-29T23:43:05+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?page=1&limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002799s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0065s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0059s ]
+
+[ 2017-05-29T23:43:08+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0071s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0071s ]
+
+[ 2017-05-29T23:43:15+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001812s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0064s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0067s ]
+
+[ 2017-05-29T23:43:22+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002019s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0073s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0071s ]
+
+[ 2017-05-29T23:44:56+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002112s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0070s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0059s ]
+
+[ 2017-05-29T23:45:47+08:00 ] 127.0.0.1 /index.php/admin/article/ArticleList?limit=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0072s ]
+SQL: SELECT article.*,category.pid,category.name FROM article article LEFT JOIN category ON article.cate_id=category.id  LIMIT 0,3   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0071s ]
 
