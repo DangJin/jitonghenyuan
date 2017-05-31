@@ -262,7 +262,171 @@
 
         </nav>
 
-        <!-- /#sidebar-wrapper --><!-- Page Content --><div id="page-content-wrapper">    <div class="navbar-top">        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">            <span class="hamb-top"></span>            <span class="hamb-middle"></span>            <span class="hamb-bottom"></span>        </button>    </div>    <div>        <img src="/jitonghenyuan/Public/static/images/paper.jpg" class="img-responsive">        <div class="introduction row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">            <div class="col-md-2"></div>            <div class="col-md-8">                <div class="page-header animated">                    <h1>吉通恒远                        <small>联系我们</small>                    </h1>                </div>            </div>        </div>    </div>    <nav class="navbar navbar-inverse row visible-xs-sm-md-block hidden-lg" id="mobile_product">        <div class="col-md-2"></div>        <div class="container-fluid col-md-8">            <!-- Brand and toggle get grouped for better mobile display -->            <div class="navbar-header">                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"                        data-target="#bs-example-navbar-collapse-2" aria-expanded="false">                    <span class="sr-only">Toggle navigation</span>                    <span class="icon-bar"></span>                    <span class="icon-bar"></span>                    <span class="icon-bar"></span>                </button>                <span class="navbar-brand" href="">联系我们</span>            </div>            <!-- Collect the nav links, forms, and other content for toggling -->            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">                <ul class="nav navbar-nav">                    <li>                        <a href="<?php echo U('Home/ContactUs/index');?>">联系方式</a>                    </li>                    <li>                        <a href="<?php echo U('Home/ContactUs/index');?>">在线留言</a>                    </li>                </ul>            </div><!-- /.navbar-collapse -->        </div><!-- /.container-fluid -->        <div class="col-md-2"></div>    </nav>    <div class="connect_bg0 row">        <div class="col-md-2"></div>        <div class="product_img_goods col-md-8 row">            <ol class="nav nav-pills nav-stacked col-md-2  hidden-xs  hidden-sm hidden-md">                <li class="active"><a href="connect_us.html"><strong>联系我们 <i class="fa fa-angle-down"></i></strong></a>                </li>                <li class="active">                    <a href="<?php echo U('Home/ContactUs/index');?>">联系方式</a>                </li>                <li>                    <a href="<?php echo U('Home/ContactUs/message');?>">在线留言</a>                </li>            </ol>            <div class="col-md-10 row connect_bg">                <div class="col-md-12 information_title hidden-md hidden-sm hidden-xs">                    联系方式                </div>                <div class="col-md-12 row">                    <div class="col-md-12 connect_4">                        <div class="alert alert-jthy" role="alert"><i class="fa fa-location-arrow"                                                                      style="color:#743310"></i> <span>地址:北京市大兴区高米店南绿地中央广场</span>                        </div>                        <div class="alert alert-info" role="alert"><i class="fa fa-phone" style="color:#743310"></i>                            <span>电话:400-849-2009</span></div>                        <div class="alert alert-warning" role="alert"><i class="fa fa-fax" style="color:#743310"></i>                            <span>传真:010-60254798</span></div>                        <div class="alert alert-danger" role="alert"><i class="fa fa-envelope-open-o"                                                                        style="color:#743310"></i> <span>邮箱:knkt100@126.com</span>                        </div>                    </div>                    <div class="col-md-12 map  hidden-xs hidden-sm hidden-md" id="map"                         style="height: 500px;margin-top: 50px;margin-bottom: 30px;">                        <!--> 百度地图<-->                        <script type="text/javascript"                                src="http://api.map.baidu.com/api?v=2.0&ak=fkdvPUMttYlxGGvTKePS1fFjVGgRO0mB"></script>                        <script type="text/javascript">                            //创建和初始化地图函数：                            function initMap() {                                createMap();//创建地图                                setMapEvent();//设置地图事件                                addMapControl();//向地图添加控件                                addMapOverlay();//向地图添加覆盖物                            }                            function createMap() {                                map = new BMap.Map("map");                                map.centerAndZoom(new BMap.Point(116.339004, 39.770666), 18);                            }                            function setMapEvent() {                                map.enableScrollWheelZoom();                                map.enableKeyboard();                                map.enableDragging();                                map.enableDoubleClickZoom()                            }                            function addClickHandler(target, window) {                                target.addEventListener("click", function () {                                    target.openInfoWindow(window);                                });                            }                            function addMapOverlay() {                                var markers = [                                    {                                        content: " 公司地址：北京市大兴区绿地中央广场B座",                                        title: "",                                        imageOffset: {width: 0, height: -21},                                        position: {lat: 39.770444, lng: 116.339462}                                    }                                ];                                for (var index = 0; index < markers.length; index++) {                                    var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);                                    var marker = new BMap.Marker(point, {                                        icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap//jitonghenyuan/Public/static/images/icon.png", new BMap.Size(20, 25), {                                            imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)                                        })                                    });                                    var label = new BMap.Label(markers[index].title, {offset: new BMap.Size(25, 5)});                                    var opts = {                                        width: 200,                                        title: markers[index].title,                                        enableMessage: false                                    };                                    var infoWindow = new BMap.InfoWindow(markers[index].content, opts);                                    marker.setLabel(label);                                    addClickHandler(marker, infoWindow);                                    map.addOverlay(marker);                                }                                ;                            }                            //向地图添加控件                            function addMapControl() {                                var scaleControl = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});                                scaleControl.setUnit(BMAP_UNIT_IMPERIAL);                                map.addControl(scaleControl);                                var navControl = new BMap.NavigationControl({                                    anchor: BMAP_ANCHOR_TOP_LEFT,                                    type: BMAP_NAVIGATION_CONTROL_LARGE                                });                                map.addControl(navControl);                                var overviewControl = new BMap.OverviewMapControl({                                    anchor: BMAP_ANCHOR_BOTTOM_RIGHT,                                    isOpen: true                                });                                map.addControl(overviewControl);                            }                            var map;                            initMap();                        </script>                    </div>                </div>            </div>        </div>    </div>    <div class="introduction  row">        <div class="col-md-2"></div>        <div class="col-md-8">            <div class="page-header animated">                <h1>吉通恒远                    <small>合作共赢</small>                </h1>            </div>        </div>        <div class="col-md-2"></div>    </div>            
+        <!-- /#sidebar-wrapper -->
+
+
+<!-- Page Content -->
+
+<div id="page-content-wrapper">
+
+    <div class="navbar-top">
+
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+
+            <span class="hamb-top"></span>
+
+            <span class="hamb-middle"></span>
+
+            <span class="hamb-bottom"></span>
+
+        </button>
+
+    </div>
+
+
+    <div>
+
+        <img src="/jitonghenyuan/Public/static/images/paper.jpg" class="img-responsive">
+
+
+        <div class="introduction row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+
+                <div class="page-header animated">
+
+                    <h1>吉通恒远
+                        <small>新闻资讯</small>
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
+
+        <nav class="navbar navbar-inverse row visible-xs-sm-md-block hidden-lg" id="mobile_product">
+
+            <div class="col-md-2"></div>
+
+            <div class="container-fluid col-md-8">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <span class="navbar-brand" href="<?php echo U('Home/news/index');?>">新闻资讯</span>
+
+                </div>
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+                    <ul class="nav navbar-nav">
+                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php if($id == $vo["id"]): ?>class="active"<?php endif; ?>><a href="<?php echo U('Home/news/index',array('id'=>$vo['id']));?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <!--<li>-->
+                            <!--<a href="news1.html">公司新闻</a>-->
+                        <!--</li>-->
+
+                        <!--<li>-->
+                            <!--<a href="news2.html">行业资讯</a>-->
+                        <!--</li>-->
+                    </ul>
+
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+            <div class="col-md-2"></div>
+
+        </nav>
+
+
+        <div class="row" style="background: url(/jitonghenyuan/Public/static/images/bg_1.png);">
+
+            <div class="col-md-2"></div>
+
+            <div class="product_img_goods col-md-8 row">
+
+                <ol class="nav nav-pills nav-stacked col-md-2  hidden-xs  hidden-sm hidden-md">
+
+                    <li class="active"><a href="<?php echo U('Home/news/index');?>"><strong>新闻资讯 <i class="fa fa-angle-down"></i></strong></a>
+                    </li>
+                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li <?php if($id == $vo["id"]): ?>class="active"<?php endif; ?>><a href="<?php echo U('Home/news/index',array('id'=>$vo['id']));?>"><?php echo ($vo["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+                    <!--<li class="active">-->
+
+                        <!--<a href="news1.html">公司新闻</a>-->
+
+                    <!--</li>-->
+
+                    <!--<li>-->
+
+                        <!--<a href="news2.html">行业资讯</a>-->
+
+                    <!--</li>-->
+                </ol>
+
+                <div class="col-md-10 row news1_info_bg">
+                    <div class="col-md-12 information_title hidden-md hidden-sm hidden-xs">
+                        公司新闻
+                    </div>
+                    <div class="col-md-12">
+                        <h4><?php echo ($new["title"]); ?></h4>
+
+                        <?php echo ($new["content"]); ?>
+                        <div align="center" style="margin-bottom: 20px">
+                            <img src=<?php echo ($new["image"]); ?> class="img-responsive">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="introduction  row">
+
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <div class="page-header animated">
+
+                    <h1>吉通恒远
+                        <small>合作共赢</small>
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2"></div>
+
+        </div>
+
+
+            
 <div class="row" style="margin-bottom:100px ">
 
     <div class="col-md-2"></div>

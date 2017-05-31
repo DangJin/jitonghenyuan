@@ -1,0 +1,202 @@
+<include file="Public/common/header.html"/>
+
+
+<!-- Page Content -->
+
+<div id="page-content-wrapper">
+
+    <div class="navbar-top">
+
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+
+            <span class="hamb-top"></span>
+
+            <span class="hamb-middle"></span>
+
+            <span class="hamb-bottom"></span>
+
+        </button>
+
+    </div>
+
+
+    <div>
+
+        <img src="__IMA__/paper.jpg" class="img-responsive">
+
+
+        <div class="introduction row" style="background: url(__IMA__/bg_1.png);">
+
+            <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+
+                <div class="page-header animated">
+
+                    <h1>吉通恒远
+                        <small>联系我们</small>
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-inverse row visible-xs-sm-md-block hidden-lg" id="mobile_product">
+
+        <div class="col-md-2"></div>
+
+        <div class="container-fluid col-md-8">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <span class="navbar-brand" href="">联系我们</span>
+
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+                <ul class="nav navbar-nav">
+
+                    <li>
+                        <a href="{:U('Home/ContactUs/index')}">联系方式</a>
+                    </li>
+
+                    <li>
+                        <a href="{:U('Home/ContactUs/message')}">在线留言</a>
+                    </li>
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+
+        <div class="col-md-2"></div>
+
+    </nav>
+
+
+    <div class="row" style="background: url(__IMA__/bg_1.png);">
+
+        <div class="col-md-2"></div>
+
+        <div class="product_img_goods col-md-8 row">
+
+            <ol class="nav nav-pills nav-stacked col-md-2  hidden-xs  hidden-sm hidden-md">
+
+                <li class="active"><a href="connect_us.html"><strong>联系我们 <i class="fa fa-angle-down"></i></strong></a>
+                </li>
+
+                <li class="active">
+
+                    <a href="{:U('Home/ContactUs/message')}">在线留言</a>
+
+                </li>
+
+                <li>
+
+                    <a href="{:U('Home/ContactUs/index')}">联系方式</a>
+
+                </li>
+            </ol>
+
+            <div class="col-md-10 row message_form_bg">
+                <div class="col-md-12 information_title hidden-md hidden-sm hidden-xs">
+                    在线留言
+                </div>
+                <div class="col-md-12 message_form">
+                    <form method="post" action="{:U('Home/ContactUs/board')}">
+
+                        <div class="form-group">
+
+                            <label for="exampleInputTitle">标题</label>
+
+                            <input type="email" class="form-control" id="exampleInputTitle" placeholder="留言标题" name="title">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="exampleInputContent">留言内容</label>
+
+                            <textarea class="form-control" rows="3" id="exampleInputContent"
+                                      placeholder="留言内容" name="content"></textarea>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="exampleInputEmail1">您的邮箱</label>
+
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱地址" name="email">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="exampleInputPhone">联系电话</label>
+
+                            <input type="email" class="form-control" id="exampleInputPhone" placeholder="联系电话" name="phone">
+
+                        </div>
+
+                        <!--<div class="form-group">-->
+
+                            <!--<label for="exampleInputFile">选择文件或图片</label>-->
+
+                            <!--<input type="file" id="exampleInputFile">-->
+
+                        <!--</div>-->
+
+                        <button type="submit" class="btn btn-default">确定</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="introduction  row">
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+
+            <div class="page-header animated">
+
+                <h1>吉通恒远
+                    <small>合作共赢</small>
+                </h1>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+
+    </div>
+
+
+
+            <include file="Public/common/footer.html"/>

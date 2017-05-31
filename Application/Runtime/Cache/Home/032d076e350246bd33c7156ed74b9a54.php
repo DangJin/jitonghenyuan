@@ -238,21 +238,21 @@
 
                 <ul class="nav navbar-nav sidebar-nav">
 
-                    <li <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?> ><a href="index.html">网站首页 <span class="sr-only">(current)</span></a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Index') echo 'class="active"';?> ><a href="<?php echo U('index/index');?>">网站首页 <span class="sr-only">(current)</span></a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="product.html">产品中心</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Product') echo 'class="active"';?>><a href="<?php echo U('product/index');?>">产品中心</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="example.html">工程案例</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Example') echo 'class="active"';?>><a href="<?php echo U('example/index');?>">工程案例</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="net.html">销售网络</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'Net') echo 'class="active"';?>><a href="<?php echo U('net/index');?>">销售网络</a></li>
 
 
 
-                    <li <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="news.html">新闻资讯</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'News') echo 'class="active"';?>><a href="<?php echo U('news/index');?>">新闻资讯</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="aboutUs.html">关于我们</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'AboutUs') echo 'class="active"';?>><a href="<?php echo U('aboutUs/index');?>">关于我们</a></li>
 
-                    <li <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="contactUs.html">联系我们</a></li>
+                    <li <?php if (CONTROLLER_NAME == 'ContactUs') echo 'class="active"';?>><a href="<?php echo U('contactUs/index');?>">联系我们</a></li>
 
                 </ul>
 
