@@ -1,0 +1,206 @@
+<include file="Public/common/header.html"/>
+
+
+
+    <!-- Page Content -->
+
+    <div id="page-content-wrapper">
+
+        <div class="navbar-top">
+
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+
+                <span class="hamb-top"></span>
+
+                <span class="hamb-middle"></span>
+
+                <span class="hamb-bottom"></span>
+
+            </button>
+
+        </div>
+
+
+
+        <div>
+
+            <img src="__IMA__/paper.jpg" class="img-responsive">
+
+
+
+            <nav class="navbar navbar-inverse row visible-xs-sm-md-block hidden-lg" id="mobile_product">
+
+                <div class="col-md-2"></div>
+
+                <div class="container-fluid col-md-8">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+
+                            <span class="sr-only">Toggle navigation</span>
+
+                            <span class="icon-bar"></span>
+
+                            <span class="icon-bar"></span>
+
+                            <span class="icon-bar"></span>
+
+                        </button>
+
+                        <span class="navbar-brand" href="{:U('Home/Example/index')}">工程案例</span>
+
+                    </div>
+
+
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
+                        <ul class="nav navbar-nav">
+
+                            <li>
+
+                                <a href="#">建筑配重</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">桥梁配重</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">防辐射混泥土</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">特种混泥土</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">高密度配重构件</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">工业地坪材料</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">案例视频</a>
+
+                            </li>
+
+
+
+                        </ul>
+
+
+
+                    </div><!-- /.navbar-collapse -->
+
+                </div><!-- /.container-fluid -->
+
+                <div class="col-md-2"></div>
+
+            </nav>
+
+
+
+            <div class="index_product_title row hidden-xs  hidden-sm hidden-md">
+
+                <div class="title col-md-12 hidden-xs  hidden-sm hidden-md" align="center">
+
+                    <strong>工程案例 | Construction Case</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-12 hidden-xs  hidden-sm hidden-md" style="height: 50px;background: url(__IMA__/bg_1.png);"></div>
+            <div class="product_img row" style="background: url(__IMA__/bg_1.png);">
+
+                <div class="col-md-2"></div>
+
+                <div class="product_img_goods col-md-8 row">
+
+                    <ol class="nav nav-pills nav-stacked col-md-2  hidden-xs  hidden-sm hidden-md">
+
+                        <li class="active"><a href="{:U('Home/Example/index')}"><strong>工程案例   <i class="fa fa-angle-down"></i></strong></a></li>
+
+                        <volist name="list" id="vo">
+                            <li <if condition='$id eq $vo["id"]'>class="active"</if> ><a href="{:U('Home/Example/index',array('id'=>$vo['id']))}">{$vo.name}</a></li>
+                        </volist>
+
+                    </ol>
+
+                    <ul class="col-md-10 row" style="background: #fafafa">
+
+
+
+                        <li class="col-md-12 row">
+                            <div class="col-md-12 information_title hidden-md hidden-sm hidden-xs">
+                                工程案例
+                            </div>
+                            <div class="col-md-6">
+                                <img src={$product.image} class="img-responsive">
+                            </div>
+                            <div class="example_information col-md-6">
+                                <div class="example_title"><strong>{$product.title}</strong></div>
+                                <div class="example_type">产品类型： {$product.type}</div>
+                                <div class="example_code">项目编号： {$product.proid}</div>
+
+                            </div>
+                            <div class="col-md-12 example_jieshao">
+                                <div class="example_jieshao_title">项目介绍</div>
+                                <div class="example_jieshao_content">
+                                    <p>{$product.content}</p>
+                                    <!--<p>该项目总占地面积为77,650平方米， 总建筑面积为231,591平方米， 包括新建4幢15层高的办公楼。</p>-->
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+            </div>
+
+
+
+
+
+
+
+
+            <div class="index_work_title row">
+
+                <div class="title col-md-12" align="center">
+
+                    <strong>吉通恒远厂房实拍 | Product Center</strong>
+
+                </div>
+
+            </div>
+
+
+
+           <include file="Public/common/footer.html"/>

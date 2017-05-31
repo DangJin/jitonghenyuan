@@ -9,10 +9,15 @@
 namespace Home\Controller;
 
 
+use Home\Model\ArticleModel;
+use Home\Model\CategoryModel;
+
 class TestController
 {
     public function index()
     {
-        echo lcfirst(CONTROLLER_NAME);
+
+        $result = D('Category')->getTree(2);
+        dump($result);
     }
 }
